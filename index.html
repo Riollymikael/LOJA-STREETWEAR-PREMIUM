@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DROP // STORE - Streetwear</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR FIXA NO TOPO -->
+    <nav class="navbar" id="inicio">
+        <div class="logo">
+            <a href="index.html">DROP <span>// STORE</span></a>
+        </div>
+        
+        <!-- MENU DE NAVEGAÇÃO -->
+        <ul class="nav-menu" id="navMenu">
+            <li><a href="#inicio" onclick="closeMobileMenu()">Início</a></li>
+            <li><a href="#colecao" onclick="closeMobileMenu()">Coleções</a></li>
+            <li><a href="#catalog" onclick="closeMobileMenu()">Produtos</a></li>
+            <li><a href="#depoimentos" onclick="closeMobileMenu()">Depoimentos</a></li>
+            <li><a href="admin.html" class="nav-admin-link"><i class="fa-solid fa-lock"></i> Admin</a></li>
+        </ul>
+
+        <div class="nav-icons">
+            <div class="cart-icon-wrapper" onclick="toggleCartModal()">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cartCount" class="cart-count">0</span>
+            </div>
+            <!-- Botão Hambúrguer para Celular -->
+            <button class="menu-toggle" id="menuToggle" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- BANNER HERO PRINCIPAL -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>DROP 01 // DARK ERA</h1>
+            <p>Peças exclusivas com caimento perfeito, tecidos pesados e acabamento premium.</p>
+            <a href="#catalog" class="btn-hero">VER COLEÇÃO COMPLETA</a>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DE COLEÇÕES -->
+    <section class="collections-section" id="colecao">
+        <div class="collection-banner">
+            <div class="banner-content">
+                <h2>EXPLORE AS COLEÇÕES</h2>
+                <p>Encontre a peça ideal para o seu lifestyle streetwear</p>
+            </div>
+        </div>
+
+        <div class="collections-grid" id="categoriesContainer">
+            <div class="collection-item" onclick="filterByCategory('todas')">
+                <div class="circle-img">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=400" alt="Todas">
+                </div>
+                <span>Todas</span>
+            </div>
+            <div class="collection-item" onclick="filterByCategory('camisas')">
+                <div class="circle-img">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=400" alt="Camisas">
+                </div>
+                <span>Camisas</span>
+            </div>
+            <div class="collection-item" onclick="filterByCategory('tenis')">
+                <div class="circle-img">
+                    <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?q=80&w=400" alt="Tênis">
+                </div>
+                <span>Tênis</span>
+            </div>
+            <div class="collection-item" onclick="filterByCategory('calcas')">
+                <div class="circle-img">
+                    <img src="https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=400" alt="Calças">
+                </div>
+                <span>Calças</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATÁLOGO DE PRODUTOS -->
+    <main class="main-container" id="catalog">
+        <h2 class="section-title">TODOS OS PRODUTOS</h2>
+        <div class="catalog-container" id="productsContainer">
+            <!-- Produtos serão injetados dinamicamente via JS -->
+        </div>
+    </main>
+
+    <!-- SEÇÃO DE DEPOIMENTOS -->
+    <section class="testimonials-section" id="depoimentos">
+        <h2 class="section-title text-center">O QUE NOSSOS CLIENTES DIZEM</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Qualidade insana das camisetas! O tecido é pesado e o caimento oversized ficou perfeito no corpo. Chegou em 3 dias aqui em SP."</p>
+                <div class="client-info">
+                    <strong>Matheus Lima</strong>
+                    <span>São Paulo, SP</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Comprei o tênis e uma calça cargo. Atendimento nota 10 pelo WhatsApp, tiraram todas as dúvidas de tamanho. Virei cliente fiel!"</p>
+                <div class="client-info">
+                    <strong>Lucas Andrade</strong>
+                    <span>Curitiba, PR</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Estampa incrível e não desbota na lavagem. O envio foi super rápido e a embalagem veio bem protegida."</p>
+                <div class="client-info">
+                    <strong>Gabriel Santos</strong>
+                    <span>Rio de Janeiro, RJ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER / RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>DROP <span>// STORE</span></h3>
+                <p class="footer-desc">A marca focada na cultura urbana e streetwear premium.</p>
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-location-dot"></i> Av. Paulista, 1000 - Bela Vista, São Paulo - SP</p>
+                    <p><i class="fa-solid fa-phone"></i> (11) 99876-5432</p>
+                    <p><i class="fa-solid fa-envelope"></i> contato@dropstore.com.br</p>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>NAVEGAÇÃO</h4>
+                <ul class="footer-menu">
+                    <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Início</a></li>
+                    <li><a href="#colecao"><i class="fa-solid fa-chevron-right"></i> Coleções</a></li>
+                    <li><a href="#catalog"><i class="fa-solid fa-chevron-right"></i> Produtos</a></li>
+                    <li><a href="#depoimentos"><i class="fa-solid fa-chevron-right"></i> Depoimentos</a></li>
+                    <li><a href="admin.html"><i class="fa-solid fa-lock"></i> Painel Admin</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>REDES SOCIAIS</h4>
+                <p>Acompanhe os próximos drops nas nossas redes:</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 DROP // STORE. Todos os direitos reservados.</p>
+            <p class="developer-credit">Desenvolvido por <strong>Riolly</strong></p>
+        </div>
+    </footer>
+
+    <!-- MODAL DE DETALHES DO PRODUTO -->
+    <div id="productDetailModal" class="modal-overlay">
+        <div class="modal-content product-detail-card">
+            <span class="close-modal" onclick="closeProductDetailModal()">&times;</span>
+            <div class="product-detail-body">
+                <div class="detail-img-container">
+                    <img id="modalProductImage" src="" alt="Produto">
+                </div>
+                <div class="detail-info-container">
+                    <span id="modalProductTag" class="product-tag"></span>
+                    <h2 id="modalProductTitle"></h2>
+                    <div class="product-prices">
+                        <span id="modalProductPrice" class="price-current"></span>
+                        <span id="modalProductOldPrice" class="price-old"></span>
+                    </div>
+                    <p id="modalProductDescription" class="product-description"></p>
+                    
+                    <div class="size-selector">
+                        <label>Tamanho:</label>
+                        <div class="size-options">
+                            <span class="size-btn active">P</span>
+                            <span class="size-btn">M</span>
+                            <span class="size-btn">G</span>
+                            <span class="size-btn">GG</span>
+                        </div>
+                    </div>
+
+                    <button id="modalAddToCartBtn" class="btn-add-cart-large">ADICIONAR AO CARRINHO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL CARRINHO -->
+    <div id="cartModal" class="modal-overlay">
+        <div class="modal-content cart-modal-content">
+            <div class="cart-header">
+                <h3>SEU CARRINHO</h3>
+                <span class="close-modal" onclick="toggleCartModal()">&times;</span>
+            </div>
+            <div id="cartItemsList" class="cart-items-list">
+                <!-- Itens injetados via JS -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <strong id="cartTotalValue">R$ 0,00</strong>
+                </div>
+                <button class="btn-checkout" onclick="checkoutWhatsApp()">FINALIZAR NO WHATSAPP</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/products.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
