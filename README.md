@@ -10,10 +10,8 @@ Desenvolvido por **Riolly Mikael**.
 
 <div align="center">
 
-  <!-- IMAGEM DE PREVIEW (Certifique-se de salvar uma imagem de preview na pasta images) -->
-  <img src="images/hero-bg.jpg" alt="Prévia da Loja DROP STORE" width="100%">
+  <img width="1873" height="870" alt="image" src="https://github.com/user-attachments/assets/ac71385f-5102-4763-92b5-2aa43343d674" />
 
-  <br><br>
 
   <!-- BOTÃO DE LIVE DEMO -->
   <p align="center">
