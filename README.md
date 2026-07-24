@@ -1,68 +1,74 @@
-# ⚡ AURA STREETWEAR | E-Commerce High-End
+## 👨‍💻 Autor
 
-<p align="center">
-  <b>Plataforma de e-commerce de moda urbana desenvolvida com foco em alta conversão, galeria interativa de produtos, gestão de coleções e Painel Administrativo com upload de imagens.</b>
-</p>
+Desenvolvido por **Riolly Mikael**.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Concluído-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/HTML5-E54C21?style=for-the-badge&logo=html5&logoColor=white">
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white">
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
-</p>
+* **GitHub:** [@riollymikael](https://github.com/riollymikael)
 
-<!-- BOTÃO LIVE DEMO -->
-<p align="center">
-  <a href="https://riollymikael.github.io/loja-streetwear-premium/">
-    <img src="https://img.shields.io/badge/🚀_Ver_Demonstração_Online-e5b869?style=for-the-badge&logoColor=black&color=e5b869" alt="Ver Demo">
+---
+
+# 🛍️ DROP // STORE — Streetwear E-commerce
+
+<div align="center">
+
+  <!-- IMAGEM DE PREVIEW (Certifique-se de salvar uma imagem de preview na pasta images) -->
+  <img src="images/hero-bg.jpg" alt="Prévia da Loja DROP STORE" width="100%">
+
+  <br><br>
+
+  <!-- BOTÃO DE LIVE DEMO -->
+  <p align="center">
+    <a href="https://riollymikael.github.io/drop-store/">
+      <img src="https://img.shields.io/badge/🚀_Ver_Demonstração_Online-000000?style=for-the-badge&logoColor=white&color=000000" alt="Ver Demo">
+    </a>
+  </p>
+
+  <!-- BOTÕES DE ACESSO RÁPIDO -->
+  <a href="https://github.com/riollymikael/drop-store">
+    <img src="https://img.shields.io/badge/💻_Código_Fonte-100000?style=for-the-badge&logo=github" alt="Código Fonte">
   </a>
-</p>
+  <img src="https://img.shields.io/badge/📱_100%25_Responsivo-22c55e?style=for-the-badge" alt="Responsivo">
 
-<!-- PREVIEW DO SITE -->
-<p align="center">
-  <img src="images/preview.png" alt="Preview AURA Streetwear" width="100%" style="border-radius: 8px;">
-</p>
+</div>
 
 ---
 
-## 📋 Sobre o Projeto
+## 📌 Sobre o Projeto
 
-O **AURA STREETWEAR** é uma plataforma de e-commerce completa em Dark Mode voltada para marcas de roupas e moda urbana de alto padrão. O sistema possui catálogo inicial com 15 produtos, página individual de detalhes com carrossel dinâmico (troca automática a cada 5s e seleção manual de miniaturas), seletor de tamanhos e **Painel Administrativo avançado** que permite cadastrar novas coleções e anexar fotos locais do computador.
+A **DROP // STORE** é uma landing page e e-commerce focado na cultura urbana e moda *streetwear premium*. O projeto traz um design moderno com estética *dark*, alta conversão de vendas, catálogo dinâmico de produtos com seleção de tamanhos, carrinho interativo e integração direta para finalização de pedidos via WhatsApp.
 
----
-
-## ✨ Principais Funcionalidades
-
-* **Página de Detalhes do Produto (`detalhes.html`):**
-  * Carrossel de fotos automático que alterna a cada 5 segundos.
-  * Seleção manual por miniaturas de fotos clicáveis.
-  * Escolha de tamanhos (P, M, G, GG para vestuário e 38 a 43 para calçados).
-  * Exibição de descrição detalhada e preço com desconto.
-* **Painel Administrativo Completo (`admin.html`):**
-  * **Criador de Coleções:** Permite cadastrar e remover novas coleções/categorias em tempo real.
-  * **Upload de Múltiplas Fotos:** Anexo direto de arquivos do computador convertidos em Base64 para persistência no `localStorage`.
-  * **Cadastro de Descrição e Tags:** Inclusão de textos detalhados por produto.
-* **Carrinho de Compras Interativo & WhatsApp:**
-  * Painel lateral dinâmico que salva os itens selecionados e permite o envio formatado do pedido via WhatsApp.
-* **Design Dark Mode Responsivo:** Experiência fluida para desktop, tablets e celulares.
+### ✨ Diferenciais do Layout:
+* ⚡ **Hero Banner:** Destaque para o lançamento principal (*DROP 01 // DARK ERA*).
+* 🏷️ **Filtro por Categorias:** Navegação dinâmica entre Camisas, Tênis, Calças e Coleções.
+* 🛍️ **Modal de Detalhes do Produto:** Visualização ampliada, seleção de tamanhos (P, M, G, GG) e informações do item.
+* 🛒 **Carrinho Dinâmico:** Atualização em tempo real de itens e valor total do pedido.
+* 📱 **Checkout Direto no WhatsApp:** Envio automático do resumo da compra com produtos e valores.
+* 💬 **Depoimentos de Clientes:** Seção dedicada à prova social e avaliações.
+* 📱 **100% Responsivo:** Adaptado com precisão para dispositivos móveis e desktops.
 
 ---
 
-## 🗂️ Estrutura do Projeto
+## 🛠️ Tecnologias Utilizadas
+
+* **HTML5:** Estruturação semântica do e-commerce.
+* **CSS3:** Design escuro estilo streetwear, CSS Grid, Flexbox e componentes modernos.
+* **JavaScript (Vanilla):** Manipulação da DOM, gerenciamento de estado do carrinho, filtros de categorias e integração com WhatsApp.
+* **FontAwesome:** Ícones interativos para navegação e redes sociais.
+
+---
+
+## 📂 Estrutura do Repositório
 
 ```text
-LOJA-STREETWEAR-PREMIUM/
+drop-store/
 │
 ├── css/
-│   └── style.css
-│
+│   └── style.css          # Estilização global da loja
+├── images/
+│   └── hero-bg.jpg        # Banners e imagens locais do layout
 ├── js/
-│   ├── products.js
-│   ├── app.js
-│   ├── detalhes.js
-│   └── admin.js
-│
-├── index.html
-├── detalhes.html
-├── admin.html
-└── README.md
+│   ├── app.js             # Manipulação da interface, carrinho e modais
+│   ├── detalhe.js         # Lógica das páginas de detalhes
+│   └── products.js        # Base de dados/lista de produtos
+├── detalhes.html          # Página visual de detalhes do produto
+├── index.html             # Página principal do e-commerce
+└── README.md              # Documentação do projeto
