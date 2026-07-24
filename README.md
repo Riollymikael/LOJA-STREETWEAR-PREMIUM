@@ -21,7 +21,7 @@ Desenvolvido por **Riolly Mikael**.
 </p>
 
   <!-- BOTÕES DE ACESSO RÁPIDO -->
-  <a href="https://github.com/riollymikael/drop-store">
+  <a href="https://github.com/Riollymikael/LOJA-STREETWEAR-PREMIUM">
     <img src="https://img.shields.io/badge/💻_Código_Fonte-100000?style=for-the-badge&logo=github" alt="Código Fonte">
   </a>
   <img src="https://img.shields.io/badge/📱_100%25_Responsivo-22c55e?style=for-the-badge" alt="Responsivo">
